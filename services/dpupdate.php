@@ -43,7 +43,7 @@ class InsertData extends connection
                 }
             }
 
-            $sql_sth="select house_no from public.customers_iac where equipment='$m_no'";
+            $sql_sth="select house_no from public.customers_iac where meter_no='$m_no'";
             $result_sth = pg_query($sql_sth);
             $rs_sth=pg_fetch_assoc($result_sth);
             $h_no=$rs_sth['assb_house_no'];
